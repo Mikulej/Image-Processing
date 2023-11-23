@@ -7,6 +7,7 @@ fn main() {
     // ...
 }
 use std::env;
+
 "how to add rust crate to my program"
 [package]
 name = "my_project"
@@ -15,3 +16,55 @@ edition = "2018"
 
 [dependencies]
 image = "0.23.14"
+
+"create function to save image"
+use image::GenericImageView;
+
+fn save_image(image: &DynamicImage, path: &str) {
+    image
+        .save(path)
+        .expect("Failed to save image");
+}
+
+"How do i pass parameters to main function?"
+fn main() {
+    let args: Vec<String> = std::env::args().collect();
+    println!("{:?}", args);
+}
+
+"check size of args"
+if args.len() < 3 {
+    panic!("Not enough arguments. Expected path to image1, path to image2, and operation (r, m, b).");
+}
+
+"use args[0] in match statement"
+let mode = &args[1];
+match mode.as_str() {
+    "r" => {}, //removal
+    "m" => {}, //merge
+    "b" => {}, //blur
+    _ => panic!("Invalid operation. Expected 'r', 'm', or 'b'."),
+}
+
+"how to print variable inside of println!"
+let num_args = args.len();
+println!("Number of arguments passed: {}", num_args);
+
+"how to get path of 2 pictures in images folder"
+"what if i dont know the names of the images"
+use std::fs;
+
+fn main() {
+    let paths = fs::read_dir("./images").unwrap();
+
+    let mut image_paths = Vec::new();
+
+    for path in paths {
+        let path_str = path.unwrap().path().display().to_string();
+        if path_str.ends_with(".png") {
+            image_paths.push(path_str);
+        }
+    }
+
+    println!("{:?}", image_paths);
+}
