@@ -68,3 +68,29 @@ fn main() {
 
     println!("{:?}", image_paths);
 }
+
+"how to change rgba pixel data"
+let pixel = img.get_pixel(x, y);
+let mut new_pixel = pixel.to_rgba();
+new_pixel[0] = 255; // Set the red channel to its maximum value
+img.put_pixel(x, y, image::Rgba(new_pixel));
+
+"iterate throught all pixel channels"
+for (x, y, pixel) in img.enumerate_pixels_mut() {
+    for channel in pixel.channels_mut() {
+        // Manipulate channel here
+    }
+}
+
+"code for merging two images based on ratio of two images"
+for (x, y, pixel) in img.enumerate_pixels() {
+    let mut pixel1 = *pixel;
+    let mut pixel2 = *img2.get_pixel(x, y);
+    for (channel1, channel2) in pixel1.channels_mut().iter_mut().zip(pixel2.channels().iter()) {
+        *channel1 = ((*channel1 as f32 * ratio1) + (*channel2 as f32 * ratio2)) as u8;
+    }
+    img.put_pixel(x, y, pixel1);
+}
+
+"How can I state that my variable mergedPixel represents Rgba"
+let mut mergedPixel: image::Rgba<u8> = image::Rgba([0, 0, 0, 0]);
