@@ -7,8 +7,6 @@ use std::time::{SystemTime};
 
 fn main() {
     let start =SystemTime::now();
-    //let current_dir = env::current_dir().expect("Failed to get current directory");
-    //println!("current_dir: {:?}", current_dir);
     let args: Vec<String> = std::env::args().collect();
     
     //1. Get images' paths
@@ -22,18 +20,57 @@ fn main() {
             image_paths.push(path_str);
         }
     }
-    //println!("{:?}", image_paths);
 
     //2.Load Image
-    let mut img = load_image(&image_paths[0]);
-    
-    // Obtain the image's width and height.
-    let (width, height) = img.dimensions();
+    let img = load_image(&image_paths[0]);
+    let (width, height) = img.dimensions(); // Obtain the image's width and height.
     let mut imgbuf = image::ImageBuffer::new(width, height);
     //3. Manipulate image
     let mode = args[1].as_str();
         match mode {
-            "r" => {}, //removal
+            "r" => {//removal
+                imgbuf = img.to_rgba8();
+                for i in (2..args.len()).step_by(4) {
+                    if let Some(arg1) = args.get(i) {
+                        if let Some(arg2) = args.get(i + 1) {
+                            if let Some(arg3) = args.get(i + 2) {
+                                if let Some(arg4) = args.get(i + 3){
+                                    match arg1.as_str(){
+                                        "s" =>{//square
+                                            let x = arg2.parse::<i32>().unwrap();
+                                            let y = arg3.parse::<i32>().unwrap();
+                                            let length = arg4.parse::<u32>().unwrap();
+                                            for i in x..(x+length as i32){
+                                                if(i >= width as i32 || i < 0){continue;}
+                                                for j in y..(y+length as i32){
+                                                    if(j >= height as i32 || j < 0){continue;}
+                                                    imgbuf.put_pixel(i as u32, j as u32, image::Rgba([0, 0, 0, 0]));
+                                                }
+                                            }
+                                        },
+                                        "c" =>{//circle
+                                            let x = arg2.parse::<i32>().unwrap();
+                                            let y = arg3.parse::<i32>().unwrap();
+                                            let radius = arg4.parse::<u32>().unwrap();
+                                            for i in (x-radius as i32)..(x+radius as i32){
+                                                if(i >= width as i32 || i < 0){continue;}
+                                                for j in (y-radius as i32)..(y+radius as i32){
+                                                    if(j >= height as i32 || j < 0){continue;}
+                                                    if (i-x)*(i-x) + (j-y)*(j-y) <= (radius * radius) as i32{
+                                                        imgbuf.put_pixel(i as u32, j as u32, image::Rgba([0, 0, 0, 0]));
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        _=> panic!("Invalid shape. Expected 's' or 'c'. Was {}", arg1),
+                                    }
+                                }          
+                            } 
+                        } 
+                    } 
+                }
+                imgbuf.save("out/out.png").unwrap();
+            }, 
             "m" => { //merge
                 let ratio1 = args[2].parse::<f32>().unwrap();
                 let ratio2 = 1.0 - ratio1;
@@ -54,10 +91,10 @@ fn main() {
             }, 
             "b" => {//blur
                 let blurStrength = args[2].parse::<f32>().unwrap();
-                img = img.blur(blurStrength);
-                img.save("out/out.png").unwrap();         
+                imgbuf = img.blur(blurStrength).to_rgba8();
+                imgbuf.save("out/out.png").unwrap();         
             }, 
-            _ => panic!("Invalid operation. Expected 'r', 'm', or 'b'."),
+            _ => panic!("Invalid operation. Expected 'r', 'm', or 'b'. Was {}", mode),
         }
     println!("Time elapsed: {:?}", start.elapsed());
 }

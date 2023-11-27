@@ -94,3 +94,58 @@ for (x, y, pixel) in img.enumerate_pixels() {
 
 "How can I state that my variable mergedPixel represents Rgba"
 let mut mergedPixel: image::Rgba<u8> = image::Rgba([0, 0, 0, 0]);
+
+"iterate by every third args"
+for arg in args.iter().step_by(3) {
+    // Use arg here
+}
+
+"How to check if arg is out of bound"
+if let Some(arg) = args.get(index) {
+    // Use arg here
+} else {
+    // Handle the case where the index is out of bounds
+}
+
+"In one loop get args[i],args[i+1],args[i+2]"
+for i in (1..args.len()).step_by(3) {
+    if let Some(arg1) = args.get(i) {
+        if let Some(arg2) = args.get(i + 1) {
+            if let Some(arg3) = args.get(i + 2) {
+                // Use arg1, arg2, and arg3 here
+            } else {
+                // Handle the case where i + 2 is out of bounds
+            }
+        } else {
+            // Handle the case where i + 1 is out of bounds
+        }
+    } else {
+        // Handle the case where i is out of bounds
+    }
+}
+
+"s" =>{//square
+    let x = arg2.parse::<u32>().unwrap();
+    let y = arg3.parse::<u32>().unwrap();
+    for i in x..(x+100){
+        for j in y..(y+100){
+            imgbuf.put_pixel(i, j, image::Rgba([0, 0, 0, 0]));
+        }
+    }
+    imgbuf.save("out/out.png").unwrap();
+
+},
+"c" =>{//circle
+    let x = arg2.parse::<u32>().unwrap();
+    let y = arg3.parse::<u32>().unwrap();
+    for i in x..(x+100){
+        for j in y..(y+100){
+            if (i-x)*(i-x) + (j-y)*(j-y) <= 10000{
+                imgbuf.put_pixel(i, j, image::Rgba([0, 0, 0, 0]));
+            }
+        }
+    }
+    imgbuf.save("out/out.png").unwrap();
+
+},
+_=> panic!("Invalid shape. Expected 's' or 'c'."),
