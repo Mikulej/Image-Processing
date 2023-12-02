@@ -41,9 +41,9 @@ fn main() {
                                             let y = arg3.parse::<i32>().unwrap();
                                             let length = arg4.parse::<u32>().unwrap();
                                             for i in x..(x+length as i32){
-                                                if(i >= width as i32 || i < 0){continue;}
+                                                if i >= width as i32 || i < 0{continue;}
                                                 for j in y..(y+length as i32){
-                                                    if(j >= height as i32 || j < 0){continue;}
+                                                    if j >= height as i32 || j < 0 {continue;}
                                                     imgbuf.put_pixel(i as u32, j as u32, image::Rgba([0, 0, 0, 0]));
                                                 }
                                             }
@@ -53,9 +53,9 @@ fn main() {
                                             let y = arg3.parse::<i32>().unwrap();
                                             let radius = arg4.parse::<u32>().unwrap();
                                             for i in (x-radius as i32)..(x+radius as i32){
-                                                if(i >= width as i32 || i < 0){continue;}
+                                                if i >= width as i32 || i < 0 {continue;}
                                                 for j in (y-radius as i32)..(y+radius as i32){
-                                                    if(j >= height as i32 || j < 0){continue;}
+                                                    if j >= height as i32 || j < 0 {continue;}
                                                     if (i-x)*(i-x) + (j-y)*(j-y) <= (radius * radius) as i32{
                                                         imgbuf.put_pixel(i as u32, j as u32, image::Rgba([0, 0, 0, 0]));
                                                     }
