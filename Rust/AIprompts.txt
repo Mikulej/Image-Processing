@@ -149,3 +149,23 @@ for i in (1..args.len()).step_by(3) {
 
 },
 _=> panic!("Invalid shape. Expected 's' or 'c'."),
+
+"get total time of each loop"
+for _ in 0..12 {
+    let start = std::time::Instant::now();
+    // Your action here
+    let end = std::time::Instant::now();
+    let totalTime = end.duration_since(start);
+    println!("Time elapsed: {:?}", totalTime);
+}
+
+"sum it up for all 12 iterations"
+let mut total_time = std::time::Duration::new(0, 0);
+for _ in 0..12 {
+    let start = std::time::Instant::now();
+    // Your action here
+    let end = std::time::Instant::now();
+    let elapsed_time = end.duration_since(start);
+    total_time += elapsed_time;
+}
+println!("Total time elapsed: {:?}", total_time);
