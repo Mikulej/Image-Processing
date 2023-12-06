@@ -16,7 +16,7 @@ go run <$your_path>/main.go [options]
 In the `root` of the project:
 
 ```ps
-go build -o <$where_to_put_your_executable>
+go build -o <$path_to_executable> <$path_to_main.go>
 ```
 
 ***

@@ -362,3 +362,51 @@ The resulting sums are then divided by the total weight to get the average, and 
 
 So, to answer your question, yes, the kernel size should be doubled in this context. It's a common practice in implementing Gaussian blur. However, please note that the actual kernel size (i.e., the width and height of the square area used for the blur) is `2*kernel_size + 1`, because the kernel includes the center pixel as well. For example, if `kernel_size` is 1, the actual kernel size is 3 (1 pixel above, the center pixel, and 1 pixel below). If `kernel_size` is 2, the actual kernel size is 5, and so on. This might be a point of confusion, so I hope this explanation helps!
 ```
+
+***
+
+# .ps1
+
+***gpt-4***
+
+**i have command line application,**
+**please create a powershell script to check a mean time of execution of the programm,**
+**this program take specific parameters "-i path1 -o path2",**
+**and you should calculate mean after 50 times running programm,**
+**please create separate variables for times the programm is running and the path to this programm**
+
+```ps
+# Define the path to the program
+$programPath = "YourProgram.exe"
+
+# Define the input and output parameters
+$param1 = "-i path1"
+$param2 = "-o path2"
+
+# Define the number of times the program will be run
+$timesToRun = 50
+
+# Initialize a variable to store the total execution time
+$totalTime = 0
+
+# Run the program the specified number of times
+for ($i = 0; $i -lt $timesToRun; $i++) {
+    # Get the current time
+    $startTime = Get-Date
+
+    # Run the program with the specified parameters
+    & $programPath $param1 $param2
+
+    # Calculate the execution time
+    $executionTime = ((Get-Date) - $startTime).TotalMilliseconds
+
+    # Add the execution time to the total time
+    $totalTime += $executionTime
+}
+
+# Calculate the mean execution time
+$meanTime = $totalTime / $timesToRun
+
+# Output the mean execution time
+Write-Output "Mean execution time: $meanTime ms"
+```
