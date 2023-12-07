@@ -1,0 +1,255 @@
+Testing algorithm: Box blur (11x11)
+	Loaded image "images/1k/rock_wall_10_diff_1k.jpg" (1024x1024) for Box blur (11x11)
+		Attempt 1: Time: 3,42422 s
+		Attempt 2: Time: 2,97470 s
+		Attempt 3: Time: 2,56599 s
+		Attempt 4: Time: 2,59685 s
+		Attempt 5: Time: 2,59985 s
+		Attempt 6: Time: 2,61833 s
+		Attempt 7: Time: 2,56293 s
+		Attempt 8: Time: 2,56500 s
+		Attempt 9: Time: 2,59809 s
+		Attempt 10: Time: 2,60341 s
+		Attempt 11: Time: 2,60088 s
+		Attempt 12: Time: 2,56808 s
+			Average time: 2,68986 s
+	Loaded image "images/1k/wood_planks_diff_1k.jpg" (1024x1024) for Box blur (11x11)
+		Attempt 1: Time: 2,62002 s
+		Attempt 2: Time: 2,61800 s
+		Attempt 3: Time: 2,59180 s
+		Attempt 4: Time: 2,58188 s
+		Attempt 5: Time: 2,52274 s
+		Attempt 6: Time: 2,54556 s
+		Attempt 7: Time: 2,61565 s
+		Attempt 8: Time: 2,61173 s
+		Attempt 9: Time: 2,63964 s
+		Attempt 10: Time: 2,50163 s
+		Attempt 11: Time: 2,57181 s
+		Attempt 12: Time: 2,58763 s
+			Average time: 2,58401 s
+	Loaded image "images/2k/rock_wall_10_diff_2k.jpg" (2048x2048) for Box blur (11x11)
+		Attempt 1: Time: 10,2177 s
+		Attempt 2: Time: 10,1751 s
+		Attempt 3: Time: 10,1392 s
+		Attempt 4: Time: 10,1431 s
+		Attempt 5: Time: 10,2033 s
+		Attempt 6: Time: 10,4159 s
+		Attempt 7: Time: 10,2545 s
+		Attempt 8: Time: 10,2033 s
+		Attempt 9: Time: 10,0551 s
+		Attempt 10: Time: 10,2326 s
+		Attempt 11: Time: 10,2708 s
+		Attempt 12: Time: 10,2779 s
+			Average time: 10,2157 s
+	Loaded image "images/2k/wood_planks_diff_2k.jpg" (2048x2048) for Box blur (11x11)
+		Attempt 1: Time: 10,2560 s
+		Attempt 2: Time: 10,2289 s
+		Attempt 3: Time: 10,0923 s
+		Attempt 4: Time: 10,4454 s
+		Attempt 5: Time: 10,8113 s
+		Attempt 6: Time: 10,2492 s
+		Attempt 7: Time: 10,1319 s
+		Attempt 8: Time: 10,1515 s
+		Attempt 9: Time: 10,1503 s
+		Attempt 10: Time: 10,1692 s
+		Attempt 11: Time: 10,2686 s
+		Attempt 12: Time: 10,1564 s
+			Average time: 10,2592 s
+	Loaded image "images/4k/rock_wall_10_diff_4k.jpg" (4096x4096) for Box blur (11x11)
+		Attempt 1: Time: 42,2728 s
+		Attempt 2: Time: 42,1527 s
+		Attempt 3: Time: 42,0133 s
+		Attempt 4: Time: 42,1602 s
+		Attempt 5: Time: 42,1468 s
+		Attempt 6: Time: 42,3325 s
+		Attempt 7: Time: 48,4905 s
+		Attempt 8: Time: 50,3736 s
+		Attempt 9: Time: 42,4998 s
+		Attempt 10: Time: 41,1649 s
+		Attempt 11: Time: 42,2324 s
+		Attempt 12: Time: 40,9170 s
+			Average time: 43,2297 s
+	Loaded image "images/4k/wood_planks_diff_4k.jpg" (4096x4096) for Box blur (11x11)
+		Attempt 1: Time: 42,7481 s
+		Attempt 2: Time: 41,6501 s
+		Attempt 3: Time: 41,1773 s
+		Attempt 4: Time: 40,7614 s
+		Attempt 5: Time: 43,0584 s
+		Attempt 6: Time: 41,9517 s
+		Attempt 7: Time: 45,2150 s
+		Attempt 8: Time: 40,8018 s
+		Attempt 9: Time: 41,4894 s
+		Attempt 10: Time: 43,7422 s
+		Attempt 11: Time: 41,3337 s
+		Attempt 12: Time: 41,3895 s
+			Average time: 42,1099 s
+Testing algorithm: Blend (blend.jpg)
+	Loaded image "images/1k/rock_wall_10_diff_1k.jpg" (1024x1024) for Blend (blend.jpg)
+		Attempt 1: Time: 0,0558614 s
+		Attempt 2: Time: 0,0463236 s
+		Attempt 3: Time: 0,0320462 s
+		Attempt 4: Time: 0,0551468 s
+		Attempt 5: Time: 0,0468746 s
+		Attempt 6: Time: 0,0392211 s
+		Attempt 7: Time: 0,0329645 s
+		Attempt 8: Time: 0,0257016 s
+		Attempt 9: Time: 0,0306632 s
+		Attempt 10: Time: 0,0358616 s
+		Attempt 11: Time: 0,0277508 s
+		Attempt 12: Time: 0,0254183 s
+			Average time: 0,0378195 s
+	Loaded image "images/1k/wood_planks_diff_1k.jpg" (1024x1024) for Blend (blend.jpg)
+		Attempt 1: Time: 0,0267431 s
+		Attempt 2: Time: 0,0238466 s
+		Attempt 3: Time: 0,0269211 s
+		Attempt 4: Time: 0,0354654 s
+		Attempt 5: Time: 0,0283226 s
+		Attempt 6: Time: 0,0337476 s
+		Attempt 7: Time: 0,0331160 s
+		Attempt 8: Time: 0,0353304 s
+		Attempt 9: Time: 0,0268954 s
+		Attempt 10: Time: 0,0311654 s
+		Attempt 11: Time: 0,0276999 s
+		Attempt 12: Time: 0,0368288 s
+			Average time: 0,0305069 s
+	Loaded image "images/2k/rock_wall_10_diff_2k.jpg" (2048x2048) for Blend (blend.jpg)
+		Attempt 1: Time: 0,182498 s
+		Attempt 2: Time: 0,131367 s
+		Attempt 3: Time: 0,0797313 s
+		Attempt 4: Time: 0,106229 s
+		Attempt 5: Time: 0,0933410 s
+		Attempt 6: Time: 0,0948074 s
+		Attempt 7: Time: 0,100932 s
+		Attempt 8: Time: 0,0957968 s
+		Attempt 9: Time: 0,0975660 s
+		Attempt 10: Time: 0,0951399 s
+		Attempt 11: Time: 0,0911601 s
+		Attempt 12: Time: 0,0989417 s
+			Average time: 0,105626 s
+	Loaded image "images/2k/wood_planks_diff_2k.jpg" (2048x2048) for Blend (blend.jpg)
+		Attempt 1: Time: 0,130559 s
+		Attempt 2: Time: 0,110589 s
+		Attempt 3: Time: 0,0926137 s
+		Attempt 4: Time: 0,104446 s
+		Attempt 5: Time: 0,0982277 s
+		Attempt 6: Time: 0,100445 s
+		Attempt 7: Time: 0,0931889 s
+		Attempt 8: Time: 0,0990202 s
+		Attempt 9: Time: 0,103063 s
+		Attempt 10: Time: 0,105009 s
+		Attempt 11: Time: 0,0975583 s
+		Attempt 12: Time: 0,102238 s
+			Average time: 0,103080 s
+	Loaded image "images/4k/rock_wall_10_diff_4k.jpg" (4096x4096) for Blend (blend.jpg)
+		Attempt 1: Time: 0,515722 s
+		Attempt 2: Time: 0,336820 s
+		Attempt 3: Time: 0,342259 s
+		Attempt 4: Time: 0,368030 s
+		Attempt 5: Time: 0,341060 s
+		Attempt 6: Time: 0,328619 s
+		Attempt 7: Time: 0,377063 s
+		Attempt 8: Time: 0,360090 s
+		Attempt 9: Time: 0,297168 s
+		Attempt 10: Time: 0,383435 s
+		Attempt 11: Time: 0,387369 s
+		Attempt 12: Time: 0,296516 s
+			Average time: 0,361179 s
+	Loaded image "images/4k/wood_planks_diff_4k.jpg" (4096x4096) for Blend (blend.jpg)
+		Attempt 1: Time: 0,442246 s
+		Attempt 2: Time: 0,398909 s
+		Attempt 3: Time: 0,384511 s
+		Attempt 4: Time: 0,376006 s
+		Attempt 5: Time: 0,356709 s
+		Attempt 6: Time: 0,368759 s
+		Attempt 7: Time: 0,374214 s
+		Attempt 8: Time: 0,360908 s
+		Attempt 9: Time: 0,441425 s
+		Attempt 10: Time: 0,347302 s
+		Attempt 11: Time: 0,384317 s
+		Attempt 12: Time: 0,321488 s
+			Average time: 0,379733 s
+Testing algorithm: Remove (4 shapes)
+	Loaded image "images/1k/rock_wall_10_diff_1k.jpg" (1024x1024) for Remove (4 shapes)
+		Attempt 1: Time: 0,0199224 s
+		Attempt 2: Time: 0,0180015 s
+		Attempt 3: Time: 0,00311230 s
+		Attempt 4: Time: 0,00361380 s
+		Attempt 5: Time: 0,00505210 s
+		Attempt 6: Time: 0,00491580 s
+		Attempt 7: Time: 0,00399720 s
+		Attempt 8: Time: 0,00321330 s
+		Attempt 9: Time: 0,00286920 s
+		Attempt 10: Time: 0,00398670 s
+		Attempt 11: Time: 0,00259970 s
+		Attempt 12: Time: 0,00258140 s
+			Average time: 0,00615545 s
+	Loaded image "images/1k/wood_planks_diff_1k.jpg" (1024x1024) for Remove (4 shapes)
+		Attempt 1: Time: 0,00247120 s
+		Attempt 2: Time: 0,00240970 s
+		Attempt 3: Time: 0,00441310 s
+		Attempt 4: Time: 0,00262710 s
+		Attempt 5: Time: 0,00422980 s
+		Attempt 6: Time: 0,00328230 s
+		Attempt 7: Time: 0,00237830 s
+		Attempt 8: Time: 0,00401680 s
+		Attempt 9: Time: 0,00259460 s
+		Attempt 10: Time: 0,00277680 s
+		Attempt 11: Time: 0,00262920 s
+		Attempt 12: Time: 0,00257060 s
+			Average time: 0,00303329 s
+	Loaded image "images/2k/rock_wall_10_diff_2k.jpg" (2048x2048) for Remove (4 shapes)
+		Attempt 1: Time: 0,00268300 s
+		Attempt 2: Time: 0,00289260 s
+		Attempt 3: Time: 0,00326520 s
+		Attempt 4: Time: 0,00298390 s
+		Attempt 5: Time: 0,00267580 s
+		Attempt 6: Time: 0,00271830 s
+		Attempt 7: Time: 0,00259600 s
+		Attempt 8: Time: 0,00387660 s
+		Attempt 9: Time: 0,00290690 s
+		Attempt 10: Time: 0,00353730 s
+		Attempt 11: Time: 0,00263150 s
+		Attempt 12: Time: 0,00247920 s
+			Average time: 0,00293719 s
+	Loaded image "images/2k/wood_planks_diff_2k.jpg" (2048x2048) for Remove (4 shapes)
+		Attempt 1: Time: 0,00259510 s
+		Attempt 2: Time: 0,00421870 s
+		Attempt 3: Time: 0,00248610 s
+		Attempt 4: Time: 0,00234820 s
+		Attempt 5: Time: 0,00346730 s
+		Attempt 6: Time: 0,00295720 s
+		Attempt 7: Time: 0,00260650 s
+		Attempt 8: Time: 0,00425510 s
+		Attempt 9: Time: 0,00414360 s
+		Attempt 10: Time: 0,00272460 s
+		Attempt 11: Time: 0,00249690 s
+		Attempt 12: Time: 0,00407230 s
+			Average time: 0,00319763 s
+	Loaded image "images/4k/rock_wall_10_diff_4k.jpg" (4096x4096) for Remove (4 shapes)
+		Attempt 1: Time: 0,00792490 s
+		Attempt 2: Time: 0,00333000 s
+		Attempt 3: Time: 0,00295210 s
+		Attempt 4: Time: 0,00375460 s
+		Attempt 5: Time: 0,00249210 s
+		Attempt 6: Time: 0,00286480 s
+		Attempt 7: Time: 0,00391420 s
+		Attempt 8: Time: 0,00417420 s
+		Attempt 9: Time: 0,00282620 s
+		Attempt 10: Time: 0,00403140 s
+		Attempt 11: Time: 0,00336800 s
+		Attempt 12: Time: 0,00360510 s
+			Average time: 0,00376980 s
+	Loaded image "images/4k/wood_planks_diff_4k.jpg" (4096x4096) for Remove (4 shapes)
+		Attempt 1: Time: 0,00277460 s
+		Attempt 2: Time: 0,00241440 s
+		Attempt 3: Time: 0,00243860 s
+		Attempt 4: Time: 0,00280780 s
+		Attempt 5: Time: 0,00322100 s
+		Attempt 6: Time: 0,00295020 s
+		Attempt 7: Time: 0,00264920 s
+		Attempt 8: Time: 0,00277110 s
+		Attempt 9: Time: 0,00363590 s
+		Attempt 10: Time: 0,00233590 s
+		Attempt 11: Time: 0,00273270 s
+		Attempt 12: Time: 0,00291770 s
+			Average time: 0,00280409 s
