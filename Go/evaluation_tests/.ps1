@@ -6,7 +6,7 @@ $paramsArray = @("-i test_images\cows.jpg -o test_images\cows.png",
 "-i test_images\view.jpg a_compositing -i2 test_images\houses.jpg -opacity 0.4 -o test_images\view.gif",
 "-i test_images\view.jpg bresen_line -shape circle -pos 500x500 -size 300 -o test_images\view.png")
 
-$timesToRun = 20
+$timesToRun = 10
 
 $totalTime = 0
 
@@ -24,7 +24,7 @@ foreach ($params in $paramsArray) {
         
         $startTime = Get-Date
 
-        & $programPath $params
+        Start-Process -FilePath $programPath -ArgumentList $params -NoNewWindow -Wait
 
         $executionTime = ((Get-Date) - $startTime).TotalMilliseconds
 
