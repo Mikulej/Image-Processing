@@ -1,17 +1,17 @@
 LIBS
 crate image https://crates.io/crates/image
-SPACE
+WEIGHT
 ~6MB
 TIME for 12 same image operations
-1k + m 0.5: Average: 1,14968525s
-1k + b 5: Average: 3,864030975s
-1k + r c 20 50 100 s 350 400 150: Average: 0,8700242916s
 
-2k + m 0.5: Average: 4,70830143s
-2k + b 5: Average: 15,80081063s
-2k + r c 20 50 100 s 350 400 150: Average: 3,6711155916s
+1k + m 0.5: Average: 0,2012623416s
+1k + b: Average: 2,268799725s
+1k + r c 20 50 100 s 350 400 150: Average: 1,11576ms
 
-4k + m 0.5: Average: 18,7368617916s
-4k + b 5: Average: 63,5492365583s
-4k + r c 20 50 100 s 350 400 150: Average: 14,4607885583s
+2k + m 0.5: Average: 0,817068125s
+2k + b: Average: 9,430494483s
+2k + r c 20 50 100 s 350 400 150: Average: 1,1190416ms
 
+4k + m 0.5: Average: 3,334304216s
+4k + b: Average: 36,66423613s
+4k + r c 20 50 100 s 350 400 150: Average: 1,1267083ms
