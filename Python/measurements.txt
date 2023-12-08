@@ -1,32 +1,48 @@
 SIZE:
 With OpenCV as one file: ~55.8 MB
 With OpenCV as one dir: ~154 MB
-With Pillow as one file: ~23.5 MB
-With Pillow as one dir: ~64.8 MB
+With Pillow as one file: ~24.6 MB
+With Pillow as one dir: ~66.8 MB
 
-TIME:
-Blur rock_wall_10_diff_1k.jpg 12 times with OpenCV
-Took 0.7120616436004639 s
-Blur rock_wall_10_diff_1k.jpg 12 times with Pillow
-Took 0.9085924625396729 s
-Blur rock_wall_10_diff_2k.jpg 12 times with OpenCV
-Took 2.7635838985443115 s
-Blur rock_wall_10_diff_2k.jpg 12 times with Pillow
-Took 3.501622438430786 s
-Blur rock_wall_10_diff_4k.jpg 12 times with OpenCV
-Took 10.891677618026733 s
-Blur rock_wall_10_diff_4k.jpg 12 times with Pillow
-Took 13.861231327056885 s
+TIME (average from 12 runs):
+1k files:
+Blur (k5) with OpenCV:
+44.26006476084391 ms
+Blur (k5) with Pillow:
+57.278335094451904 ms
+Blend (0.5/0.5) with OpenCV:
+67.68989562988281 ms
+Blend (0.5/0.5) with Pillow:
+35.15042861302694 ms
+Draw a circle (r50) with OpenCV:
+48.19575945536295 ms
+Draw a circle (r50) with Pillow:
+18.225371837615967 ms
 
-Blend rock_wall_10_diff_1k.jpg and wood_planks_diff_1k.jpg 12 times with OpenCV
-Took 1.04520583152771 s
-Blend rock_wall_10_diff_1k.jpg and wood_planks_diff_1k.jpg 12 times with Pillow
-Took 0.5465390682220459 s
-Blend rock_wall_10_diff_2k.jpg and wood_planks_diff_2k.jpg 12 times with OpenCV
-Took 4.136279821395874 s
-Blend rock_wall_10_diff_2k.jpg and wood_planks_diff_2k.jpg 12 times with Pillow
-Took 2.0655083656311035 s
-Blend rock_wall_10_diff_4k.jpg and wood_planks_diff_4k.jpg 12 times with OpenCV
-Took 16.14380955696106 s
-Blend rock_wall_10_diff_4k.jpg and wood_planks_diff_4k.jpg 12 times with Pillow
-Took 8.059162378311157 s
+2k files:
+Blur (k5) with OpenCV:
+177.1712303161621 ms
+Blur (k5) with Pillow:
+223.95612796147665 ms
+Blend (0.5/0.5) with OpenCV:
+263.07698090871173 ms
+Blend (0.5/0.5) with Pillow:
+131.47757450739542 ms
+Draw a circle (r50) with OpenCV:
+190.09496768315634 ms
+Draw a circle (r50) with Pillow:
+71.63437207539876 ms
+
+4k files:
+Blur (k5) with OpenCV:
+699.2339690526327 ms
+Blur (k5) with Pillow:
+888.0138595898947 ms
+Blend (0.5/0.5) with OpenCV:
+1031.3722292582195 ms
+Blend (0.5/0.5) with Pillow:
+511.8467013041178 ms
+Draw a circle (r50) with OpenCV:
+759.168267250061 ms
+Draw a circle (r50) with Pillow:
+281.2797625859578 ms
