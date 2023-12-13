@@ -1,10 +1,18 @@
 # path to executable
 $programPath = "img.exe"
 
-$paramsArray = @("-i test_images\cows.jpg -o test_images\cows.png",
-"-i test_images\houses.jpg g_blur -o test_images\houses.png",
-"-i test_images\view.jpg a_compositing -i2 test_images\houses.jpg -opacity 0.4 -o test_images\view.gif",
-"-i test_images\view.jpg bresen_line -shape circle -pos 500x500 -size 300 -o test_images\view.png")
+$paramsArray = @("-i test_images\1k.jpg -o test_images\1k2.png",
+"-i test_images\2k.jpg -o test_images\2k2.png",
+"-i test_images\4k.jpg -o test_images\4k2.png",
+"-i test_images\1k.jpg g_blur -o test_images\1k.png",
+"-i test_images\2k.jpg g_blur -o test_images\2k.png",
+"-i test_images\4k.jpg g_blur -o test_images\4k.png",
+"-i test_images\1k.jpg a_compositing -i2 test_images\1k_a.jpg -opacity 0.4 -o test_images\1k.gif",
+"-i test_images\1k.jpg bresen_line -shape circle -pos 500x500 -size 300 -o test_images\1k1.png",
+"-i test_images\2k.jpg a_compositing -i2 test_images\2k_a.jpg -opacity 0.4 -o test_images\2k.gif",
+"-i test_images\2k.jpg bresen_line -shape circle -pos 500x500 -size 300 -o test_images\2k1.png",
+"-i test_images\4k.jpg a_compositing -i2 test_images\4k_a.jpg -opacity 0.4 -o test_images\4k.gif",
+"-i test_images\4k.jpg bresen_line -shape circle -pos 500x500 -size 300 -o test_images\4k1.png")
 
 $timesToRun = 10
 
