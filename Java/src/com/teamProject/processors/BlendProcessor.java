@@ -78,6 +78,6 @@ public class BlendProcessor extends ImageProcessor {
 
     @Override
     public String getName() {
-        return "Blend (" + filename + ")";
+        return "Blend (" + filename.replace("/", "(slash)") + ")";
     }
 }

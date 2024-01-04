@@ -12,21 +12,20 @@ public class Main {
     static final int TESTS_NUM = 12;
     static final String[] FILENAMES = {
             "1k/rock_wall_10_diff_1k",
-            "1k/wood_planks_diff_1k",
             "2k/rock_wall_10_diff_2k",
-            "2k/wood_planks_diff_2k",
             "4k/rock_wall_10_diff_4k",
-            "4k/wood_planks_diff_4k"
     };
     static final ImageProcessor[] PROCESSORS = {
+            new BlurProcessor(121),
             new BlurProcessor(11),
-            new BlendProcessor("blend", 0.1),
+            new BlurProcessor(256),
+            new BlendProcessor("1k/wood_planks_diff_1k", 0.1),
             new RemoveProcessor(new Shape[]{
                     new RectangleShape(128, 128, 256, 256),
                     new RectangleShape(576, 640, 384, 256),
                     new CircleShape(768, 256, 128),
                     new CircleShape(256, 768, 64)
-            }, new int[]{0, 0, 0})
+            }, new int[]{0, 0, 0}),
     };
 
     public static void main(String[] args) {
